@@ -78,6 +78,7 @@ function cpt_icons() {
 add_action('admin_head', 'cpt_icons');
 
 
+include("functions/functions-kldp.php");
 include("functions/functions-nav.php");
 
 ?>
