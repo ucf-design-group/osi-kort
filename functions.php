@@ -47,14 +47,24 @@ add_action('admin_menu', 'remove_menus');
 
 function custom_post_types() {
 
-	register_post_type('news', array(
+	register_post_type('exec-board', array(
 		'labels' => array(
-			'name' => 'News',
-			'singular_name' => 'News'),
+			'name' => 'Executive Board',
+			'singular_name' => 'Board Member'),
 		'public' => true,
 		'hierarchical' => false,
-		'supports' => array('title', 'editor', 'excerpt', 'author'),
-		'register_meta_box_cb' => 'news_meta_add',
+		'supports' => array('title', 'editor'),
+		'taxonomies' => array(),
+		'has_archive' => false,
+		));
+
+	register_post_type('kldp-board', array(
+		'labels' => array(
+			'name' => 'KLDP Board',
+			'singular_name' => 'KLDP Leader'),
+		'public' => true,
+		'hierarchical' => false,
+		'supports' => array('title', 'editor'),
 		'taxonomies' => array(),
 		'has_archive' => false,
 		));
