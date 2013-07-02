@@ -20,7 +20,7 @@ get_header(); ?>
 					<a href="#">Events</a>
 					<h2>Next Event</h2>
 <?php
-					$eventLoop = new WP_QUERY(array('post_type' => 'osi-events', 'posts_per_page' => 10, 'orderby' =>'meta_value', 'order' => 'ASC', 'meta_key' => 'oe-form-start', 'meta_value' => time(), 'meta_compare' =>));
+					$eventLoop = new WP_QUERY(array('post_type' => 'osi-events', 'posts_per_page' => 10, 'orderby' =>'meta_value', 'order' => 'ASC', 'meta_key' => 'oe-form-start', 'meta_value' => time(), 'meta_compare' => '>='));
 					while ($eventLoop->have_posts()) {
 						$eventLoop->the_post();
 
