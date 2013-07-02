@@ -1,6 +1,6 @@
 <?php
 
-function leader_meta_setup() {
+function kldp_meta_setup() {
 
 	add_action('add_meta_boxes','kldp_meta_add');
 	add_action('save_post','kldp_meta_save');
