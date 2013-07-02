@@ -9,7 +9,7 @@ add_action('load-post.php','leader_meta_setup');
 add_action('load-post-new.php','leader_meta_setup');
 
 function leader_meta_add() {
-
+ 
 	add_meta_box (
 	'leader_meta',
 	'Leader Information',

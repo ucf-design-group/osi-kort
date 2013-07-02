@@ -55,7 +55,7 @@ function custom_post_types() {
 		'hierarchical' => false,
 		'supports' => array('title', 'editor'),
 		'taxonomies' => array(),
-		'has_archive' => false,
+		'has_archive' => false
 		));
 
 	register_post_type('kldp-board', array(
@@ -66,7 +66,7 @@ function custom_post_types() {
 		'hierarchical' => false,
 		'supports' => array('title', 'editor'),
 		'taxonomies' => array(),
-		'has_archive' => false,
+		'has_archive' => false
 		));
 }
 add_action('init', 'custom_post_types');
