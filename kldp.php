@@ -21,14 +21,10 @@ get_header(); ?>
 						$title = get_the_title();
 						$content = get_the_content();
 						$image = get_the_post_thumbnail($post->ID, 'small');
-						$position = get_post_meta($post->ID, 'kldp-form-position', true);
-						$email = get_post_meta($post->ID, 'kldp-form-email', true);
 ?>	
 					<article class="kldp-board">
 						<?php echo $image; ?>
 						<h3><?php echo $title; ?></h3>
-						<p><?php echo $content; ?><p>
-						<a class="email" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 					</article>
 ?>
 				}
