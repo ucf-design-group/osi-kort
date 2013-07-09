@@ -5,24 +5,37 @@
 		border: 5px outset #CBA55E
 		background-color: black
 		color: white
-		max-width: 600px
-		margin: auto
+		max-width: 1000px
+		line-height: 2
+		margin: 4em auto
 		padding: 3em 5em
-		border-radius: 10px
-		border-bottom-right-radius: 125px
-		border-top-left-radius: 125px
-		text-align: center
+		border-radius: 30px
+		// border-bottom-right-radius: 125px
+		// border-top-left-radius: 125px
+		// text-align: center
 		
 	section.mini-nav
-
-		border: 1px solid blue
 		width: 100%
 		margin: auto
+
 		article
 			float: left
 			width: 25%
-			//margin-left: 5em
 			padding: 1em
+			a.icon
+				background-image: url('resources/homepage_sprite.png')
+				display: block
+				text-indent: -10000px
+				height: 80px
+				width: 215px
+				border: 1px solid #CBA55E
+
+		@for $i from 0 through 3
+			article:nth-child(#{$i + 1})
+				a.icon
+					background-position: -($i * 215px) 0
+
+
 		h2
 			border-bottom: 1px solid black
 			
