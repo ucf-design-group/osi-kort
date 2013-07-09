@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support('post-thumbnails');
+
 /* Remove menus from the admin dashboard */
 
 function remove_menus() {
@@ -53,7 +55,7 @@ function custom_post_types() {
 			'singular_name' => 'Board Member'),
 		'public' => true,
 		'hierarchical' => false,
-		'supports' => array('title', 'editor'),
+		'supports' => array('title', 'editor', 'thumbnail'),
 		'taxonomies' => array(),
 		'has_archive' => false
 		));
@@ -64,7 +66,7 @@ function custom_post_types() {
 			'singular_name' => 'KLDP Leader'),
 		'public' => true,
 		'hierarchical' => false,
-		'supports' => array('title', 'editor'),
+		'supports' => array('title', 'editor', 'thumbnail'),
 		'taxonomies' => array(),
 		'has_archive' => false
 		));
