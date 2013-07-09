@@ -34,7 +34,7 @@ get_header(); ?>
 					<article class="event">
 						<h3><?php echo $title; ?></h3>
 						<h4><?php echo $dates; ?></h4>
-						<?php echo $content; ?>
+						<p><?php echo $content; ?></p>
 <?php
 						if ($link != "") {
 ?>
