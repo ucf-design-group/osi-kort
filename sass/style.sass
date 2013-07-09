@@ -34,7 +34,7 @@ html
 	font-size: 16px
 body
 	font: 62.5%/1.5 $baseTypeFace
-	background-color: #6A6A6A
+	background-color: #000000
 	display: block
 
 h1
@@ -48,12 +48,30 @@ h3
 	font-weight: bold
 h4, a
 	color: #CBA55E
-	font-size: 1.2em
-p
-	font-size: 1.2em
+h4, p
+	font-size: 1.5em
+	
+header
+
+	padding: 2em 0
 	
 .content-area
 	
+	background-color: #B5B5B5
 	margin: auto
-	max-width: 1000px
+	width: 100%
 	@extend %clearfix
+	
+.main
+	
+	background-color: #6A6A6A
+	
+section
+
+	max-width: 1000px
+	
+footer
+	
+	background-color: #000000
+	color: #eeeeee
+	text-align: center
