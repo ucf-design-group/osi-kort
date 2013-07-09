@@ -1,7 +1,10 @@
 section.contact
 	width: 100%
 	@extend %clearfix
-	
+
+	h2
+		// margin-bottom: 3em
+
 	article.address
 		float: left
 		width: 50%
@@ -11,4 +14,21 @@ section.contact
 		float: left
 		width: 50%
 	
-section.leader-board
+section.exec-board
+	// border: 1px solid red
+	width: 100%
+	h2
+		margin-bottom: 3em
+	article.leader
+		float: left
+		width: 50%
+		margin-bottom: 2em
+		img
+			float: left
+			margin-right: 1em
+		&:nth-child(2n)
+			clear: left
+			padding-right: 3em
+		&:nth-child(2n+1)
+			clear: right
+			padding-left: 3em
