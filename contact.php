@@ -46,7 +46,7 @@ get_header(); ?>
 				<section class="leader-board">
 					<h2>Executive Board</h2>
 <?php
-					$leaderLoop = new WP_QUERY(array('post_type' => 'leader-board', 'posts_per_page' => -1, 'orderby' =>'meta_value', 'order' => 'ASC', 'meta_key' => 'leader-form-order'));
+					$leaderLoop = new WP_QUERY(array('post_type' => 'exec-board', 'posts_per_page' => -1, 'orderby' =>'meta_value', 'order' => 'ASC', 'meta_key' => 'leader-form-order'));
 					while ($leaderLoop->have_posts()) {
 						$leaderLoop->the_post();
 						$title = get_the_title();
