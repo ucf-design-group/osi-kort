@@ -58,7 +58,6 @@ get_header(); ?>
 						<p><?php echo $content; ?><p>
 						<a class="email" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 					</article>
-?>
 				}
 
 				</section> 
