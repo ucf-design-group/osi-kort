@@ -32,6 +32,7 @@ $baseTypeFace: Verdana, sans-serif
 // Base layout/type
 html
 	font-size: 16px
+	
 body
 	font: 62.5%/1.5 $baseTypeFace
 	background-color: #000000
@@ -40,39 +41,55 @@ body
 h1
 	font-size: 3em
 	font-weight: bold
+	
 h2
 	font-size: 2.4em
 	font-weight: bold
+	
 h3
 	font-size: 1.8em
 	font-weight: bold
+	
 h4, a
 	color: #CBA55E
+	
 h4, p
 	font-size: 1.5em
 	
-header
+header .logo
+	background: url(resources/header.png) center no-repeat
+	height: 207px
+	margin: 5em 0
 
-	padding: 2em 0
-	
 .content-area
-	
 	background-color: #B5B5B5
 	margin: auto
 	width: 100%
 	@extend %clearfix
 	
-.main
+nav
+	padding: 2em 0
+	text-align: center
+	@extend %clearfix
 	
-	background-color: #6A6A6A
+	ul
+		display: inline-block
+		margin: auto
+	
+	li
+		float: left
+		font-size: 1.6em
+		font-weight: bold
+		padding: 0 2em
+		
+	#s
+		background-color: #B5B5B5 
 	
 section
-
 	margin: auto
 	max-width: 1000px
 	
 footer
-	
 	background-color: #000000
 	color: #eeeeee
 	text-align: center
