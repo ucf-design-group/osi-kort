@@ -7,8 +7,9 @@
  */
 
 ?>
-<article>
-						<h1 class="entry-title"><?php the_title(); ?></h1>
+<h1 class="entry-title"><span><?php the_title(); ?></span></h1>
+
+					<article>
 
 
 <!-- PAGE CONTENT START -->
