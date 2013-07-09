@@ -17,7 +17,7 @@
 @import reset, menu, buttons, footer, homepage, events
 
 // Base variables
-$baseTypeFace: 'Open Sans', sans-serif
+$baseTypeFace: Verdana, sans-serif
 	
 // Clearfix
 
@@ -34,17 +34,18 @@ html
 	font-size: 16px
 body
 	font: 62.5%/1.5 $baseTypeFace
-	font-weight: 600
 	background-color: #6A6A6A
 	display: block
-	max-width: 1500px
 
 h1
 	font-size: 3em
+	font-weight: bold
 h2
 	font-size: 2.4em
+	font-weight: bold
 h3
 	font-size: 1.8em
+	font-weight: bold
 h4, a
 	color: #CBA55E
 	font-size: 1.2em
@@ -52,4 +53,7 @@ p
 	font-size: 1.2em
 	
 .content-area
+	
+	margin: auto
+	max-width: 1000px
 	@extend %clearfix
