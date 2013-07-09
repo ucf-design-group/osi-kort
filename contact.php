@@ -26,16 +26,14 @@ get_header(); ?>
 					</article>
 					<article class="contact">
 						<h3>Phone:</h3>
-						<a href="tel:407-823-4496">407-823-4496</a>
+						<p><a href="tel:407-823-4496">407-823-4496</a></p>
 						<h3>Fax:</h3>
-						<a href="tel:407-823-5899">407-823-5899</a>
+						<p><a href="tel:407-823-5899">407-823-5899</a></p>
 						<h3>Email:</h3>
-						<a href="mailto:kort@ucf.edu">kort@ucf.edu</a>
-					</article>
-					<article class="social">
+						<p><a href="mailto:kort@ucf.edu">kort@ucf.edu</a></p>
 						<h3>Social:</h3>
-						<a class="facebook" href="#">Facebook</a>
-						<a class="twitter" href="#">Twitter</a>
+						<p><a class="facebook" href="#">Facebook</a></p>
+						<p><a class="twitter" href="#">Twitter</a></p>
 					</article>	
 				</section>
 
