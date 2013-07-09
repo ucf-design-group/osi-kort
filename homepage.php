@@ -39,7 +39,7 @@ get_header(); ?>
 					<article class="kldp">
 						<a href="#">KLDP</a>
 						<h2>KLDP</h2>
-						<p>Filler text here involving information about KLDP and other stuff describing button.</p>
+						<p>Learn about KoRT’s Leadership Development Program, a unique opportunity for UCF’s student leaders!</p>
 					</article>
 					<article class="rso">
 						<a href="#">RSO Database</a>
