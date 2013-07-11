@@ -1,7 +1,7 @@
 .page-knightquest
 	section.officehours
 		width: 100%
-
+		padding: 1em
 		article.kq-leader
 			float: left
 			width: 50%
@@ -15,5 +15,12 @@
 				clear: right
 				padding-left: 1em
 
-
-
+	@media screen and (max-width: 640px)
+		
+		section.officehours
+		
+			article.kq-leader
+				width: 100%
+				
+				&:nth-child(2n), &:nth-child(2n+1)
+					padding: 0
