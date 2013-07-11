@@ -26,8 +26,7 @@
 				<nav class="main-menu full">
 					<div class="screen-reader-text skip-link"><a href="#UPDATE ME" title="Skip to content">Skip to content</a></div>
 					<div class="compact-menu">
-						<a class="menu-toggle">Menu</a>
-						<?php get_search_form(); ?>
+						<a href="#" class="menu-toggle">Tap for Menu</a>
 					</div>
 					<ul>
 <?php
@@ -40,7 +39,7 @@
 
 								$navLoop->the_post();
 
-								$name = get_the_title();
+								$name = get_post_meta($post->ID, 'page-form-title', true);
 								$link = get_permalink();
 								$nav_li_class = (get_the_ID() == $current_ID) ? ' class="current" ' : '';
 
