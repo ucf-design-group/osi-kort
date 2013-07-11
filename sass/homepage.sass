@@ -25,7 +25,7 @@
 			padding: 1em
 			text-align: center
 			margin-bottom: 2em
-			
+
 			a.icon
 				background-image: url('resources/homepage_sprite.png')
 				display: inline-block
@@ -34,7 +34,7 @@
 				width: 215px
 				border: 1px solid #CBA55E
 				text-align: center
-				
+
 		@for $i from 0 through 3
 			article:nth-child(#{$i + 1})
 				a.icon
@@ -47,17 +47,16 @@
 			padding-top: 0.5em
 			
 		@extend %clearfix
-
 	@media screen and (max-width: 940px)
-		
+
 		section.mini-nav
 			article
 				width: 50%
 				&:nth-child(3)
 					clear: left
-			
+					
 	@media screen and (max-width: 470px)
-	
+
 		section.mini-nav
 			article
 				width: 100%

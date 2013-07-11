@@ -4,7 +4,6 @@ section.contact
 
 	h2
 		// margin-bottom: 3em
-
 	article.address
 		float: left
 		width: 50%
@@ -13,12 +12,30 @@ section.contact
 	article.contact
 		float: left
 		width: 50%
-	
+		padding-left: 4em
+		// border: 1px solid red
+
+		h3
+			float: left
+			clear: left
+
+
+		p
+			display: block
+			padding-left: 90px
+			margin-bottom: 1em
+
+		div.socialbuttons
+			// border: 1px solid orange
+			width: 50%
+			float: left
+			margin-left: 1em
+			display: block
+			
 section.exec-board
 	// border: 1px solid red
 	width: 100%
-	h2
-		margin-bottom: 3em
+
 	article.leader
 		float: left
 		width: 50%
@@ -26,9 +43,12 @@ section.exec-board
 		img
 			float: left
 			margin-right: 1em
+			border: 3px solid #CBA55E
+			// box-shadow: 2px 2px 5px #191919
+
 		&:nth-child(2n)
 			clear: left
-			padding-right: 3em
+			padding-right: 4em
 		&:nth-child(2n+1)
 			clear: right
-			padding-left: 3em
+			padding-left: 4em
