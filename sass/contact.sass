@@ -1,54 +1,72 @@
-section.contact
-	width: 100%
-	@extend %clearfix
+.page-contact
+	.main article
+		padding: 1em
+	section.contact
+		padding: 1em
+		width: 100%
+		@extend %clearfix
 
-	h2
-		// margin-bottom: 3em
-	article.address
-		float: left
-		width: 50%
-		clear: left
-
-	article.contact
-		float: left
-		width: 50%
-		padding-left: 4em
-		// border: 1px solid red
-
-		h3
+		h2
+			// margin-bottom: 3em
+		article.address
 			float: left
-			clear: left
-
-
-		p
-			display: block
-			padding-left: 90px
-			margin-bottom: 1em
-
-		div.socialbuttons
-			// border: 1px solid orange
 			width: 50%
-			float: left
-			margin-left: 1em
-			display: block
-			
-section.exec-board
-	// border: 1px solid red
-	width: 100%
-
-	article.leader
-		float: left
-		width: 50%
-		margin-bottom: 2em
-		img
-			float: left
-			margin-right: 1em
-			border: 3px solid #CBA55E
-			// box-shadow: 2px 2px 5px #191919
-
-		&:nth-child(2n)
 			clear: left
-			padding-right: 4em
-		&:nth-child(2n+1)
-			clear: right
+
+		article.contact
+			float: left
+			width: 50%
 			padding-left: 4em
+			// border: 1px solid red
+
+			h3
+				float: left
+				clear: left
+
+
+			p
+				display: block
+				padding-left: 90px
+				margin-bottom: 1em
+
+			div.socialbuttons
+				// border: 1px solid orange
+				width: 50%
+				float: left
+				margin-left: 1em
+				display: block
+				
+	section.exec-board
+		// border: 1px solid red
+		padding: 1em
+		width: 100%
+
+		article.leader
+			float: left
+			width: 50%
+			margin-bottom: 2em
+			img
+				float: left
+				margin-right: 1em
+				border: 3px solid #CBA55E
+				// box-shadow: 2px 2px 5px #191919
+
+			&:nth-child(2n)
+				clear: left
+				padding-right: 4em
+			&:nth-child(2n+1)
+				clear: right
+				padding-left: 4em
+				
+
+	@media screen and (max-width: 700px)
+		
+		section.contact
+			padding: 0
+			article.address, article.contact
+				padding: 1em
+				width: 100%
+		section.exec-board
+			article.leader
+				padding: 1em
+				width: 100%
