@@ -60,6 +60,17 @@ function custom_post_types() {
 		'has_archive' => false
 		));
 
+	register_post_type('fb-albums', array(
+		'labels' => array(
+			'name' => 'FB Albums',
+			'singular_name' => 'FB Album'),
+		'public' => true,
+		'hierarchical' => false,
+		'supports' => array('title'),
+		'taxonomies' => array(),
+		'has_archive' => false
+		));
+
 	register_post_type('kldp-board', array(
 		'labels' => array(
 			'name' => 'KLDP Board',
@@ -101,6 +112,7 @@ function cpt_icons() {
 add_action('admin_head', 'cpt_icons');
 
 
+include("functions/functions-albums.php");
 include("functions/functions-board.php");
 include("functions/functions-kldp.php");
 include("functions/functions-nav.php");
