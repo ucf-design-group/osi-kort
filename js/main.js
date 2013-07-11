@@ -9,12 +9,12 @@ $(document).ready(function () {
 
 // Will adjust classes and properties to display the correct menu
 var adjustNav = function(){
-  if($(document).width() < 767){
+  if($(document).width() < 700){
     $("nav.main-menu").removeClass("full").addClass("compact");
     $(".compact-menu").css("display", "block");
     $(".main-menu ul").hide();
   }
-  if($(document).width() > 767){
+  if($(document).width() > 700){
     $("nav.main-menu").removeClass("compact").addClass("full");
     $(".compact-menu").css("display", "none");
     $(".main-menu ul").show();
