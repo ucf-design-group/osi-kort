@@ -1,7 +1,7 @@
 .page-kldp
 	section.kldp-board
 		width: 100%
-
+		padding: 1em
 		article.kldp-leader
 			float: left
 			margin-bottom: 4em
@@ -17,3 +17,14 @@
 			&:nth-child(2n+1)
 				clear: right
 				padding-left: 1em
+
+
+	@media screen and (max-width: 640px)
+		
+		section.kldp-board
+		
+			article.kldp-leader
+				width: 100%
+				
+				&:nth-child(2n), &:nth-child(2n+1)
+					padding: 0
