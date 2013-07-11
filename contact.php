@@ -15,11 +15,11 @@ get_header(); ?>
 				<section class="contact">
 					<article class="address">
 						<h3>Mailing Address:</h3>
-						<p>Knights of the RoundTable
-							University of Central Florida
-							12715 Pegasus Dr.
-							Student Union, Room 208
-							Orlando, FL 32816 </p>
+						<p>Knights of the RoundTable <br />
+							University of Central Florida <br />
+							12715 Pegasus Dr. <br />
+							Student Union, Room 208 <br />
+							Orlando, FL 32816 </p> <br />
 						<h3>Directions:</h3>
 						<p>KoRT is located on the second floor of the Student Union, inside the Office of Student Involvement, Room 208.</p>
 					</article>
@@ -31,8 +31,11 @@ get_header(); ?>
 						<h3>Email:</h3>
 						<p><a href="mailto:kort@ucf.edu">kort@ucf.edu</a></p>
 						<h3>Social:</h3>
-						<p><a class="facebook" href="#">Facebook</a></p>
-						<p><a class="twitter" href="#">Twitter</a></p>
+						<div class="socialbuttons">
+							<a href="https://twitter.com/UCF_KoRT" class="twitter-follow-button" data-show-count="false">Follow @UCF_KoRT</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+							<div class="fb-like-box" data-href="https://www.facebook.com/ucfkort" data-width="200" data-show-faces="false" data-colorscheme="dark" data-stream="false" data-show-border="false" data-header="false"></div>
+						</div>
 					</article>	
 				</section>
 
@@ -66,3 +69,13 @@ get_header(); ?>
 			</div>
 
 <?php get_footer(); ?>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
