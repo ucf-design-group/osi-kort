@@ -1,20 +1,20 @@
 <?php
 
-function alubm_meta_setup() {
+function album_meta_setup() {
 
-	add_action('add_meta_boxes','alubm_meta_add');
-	add_action('save_post','alubm_meta_save');
+	add_action('add_meta_boxes','album_meta_add');
+	add_action('save_post','album_meta_save');
 }
-add_action('load-post.php','alubm_meta_setup');
-add_action('load-post-new.php','alubm_meta_setup');
+add_action('load-post.php','album_meta_setup');
+add_action('load-post-new.php','album_meta_setup');
 
-function alubm_meta_add() {
+function album_meta_add() {
  
 	add_meta_box (
-	'alubm_meta',
+	'album_meta',
 	'Facebook Album ID',
 	'album_meta',
-	'fb-album',
+	'fb-albums',
 	'normal',
 	'default');
 }
@@ -25,13 +25,20 @@ function album_meta() {
 	wp_nonce_field(basename( __FILE__ ), 'album-form-nonce' );
 
 	$albumid = get_post_meta($post->ID, 'album-form-id', true) ? get_post_meta($post->ID, 'album-form-id', true) : '';
+	$albumlink = get_post_meta($post->ID, 'album-form-link', true) ? get_post_meta($post->ID, 'album-form-link', true) : '';
 
 	?>
-	<style type="text/css">#alubum-form-id{width: 200px;}#album-form div{display:inline-block; padding:0 5px;}</style>
-	<div id="album-form">
-		<label for="album-form-id">Facebook Album ID: </label>
-		<input type="text" name="album-form-id" id="album-form-id" value="<?php echo $albumid; ?>" />
-	</div>
+	<style type="text/css">#album-form-id{width: 200px;}#album-form-link{width: 400px;}#album-form div{display:block; padding:0 5px;}</style>
+	<table id="album-form">
+		<tr>
+			<th><label for="album-form-id">Facebook Album ID: </label></th>
+			<td><input type="text" name="album-form-id" id="album-form-id" value="<?php echo $albumid; ?>" /></td>
+		</tr>
+		<tr>
+			<th><label for="album-form-link">Link to Album: </label></th>
+			<td><input type="text" name="album-form-link" id="album-form-link" value="<?php echo $albumlink; ?>" /></td>
+		</tr>
+	</table>
 	<?php
 }
 
@@ -54,6 +61,7 @@ function album_meta_save() {
 	$input = array();
 
 	$input['id'] = (isset($_POST['album-form-id']) ? $_POST['album-form-id'] : '');
+	$input['link'] = (isset($_POST['album-form-link']) ? $_POST['album-form-link'] : '');
 	
 	foreach ($input as $field => $value) {
 
