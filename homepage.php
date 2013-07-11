@@ -30,12 +30,12 @@ get_header(); ?>
 						}
 ?>
 					</article>
-					<article class="knightquest">
-						<a class="icon" href="<?php echo site_url('/knight-quest'); ?>">Knight Quest</a>
+					<article class="kldp">
+						<a class="icon" href="<?php echo site_url('/kldp'); ?>">Knight Quest</a>
 						<p>Learn about KoRT’s Leadership Development Program, a unique opportunity for UCF’s student leaders!</p>
 					</article>
-					<article class="kldp">
-						<a class="icon" href="<?php echo site_url('/kldp'); ?>">KLDP</a>
+					<article class="knight-quest">
+						<a class="icon" href="<?php echo site_url('/knightquest'); ?>">KLDP</a>
 						<p>Interested in getting involved on campus? KnightQuest can help you start your quest for success!</p>					
 					</article>
 					<article class="rso">
