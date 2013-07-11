@@ -70,6 +70,17 @@ function custom_post_types() {
 		'taxonomies' => array(),
 		'has_archive' => false
 		));
+
+	register_post_type('kq-hours', array(
+		'labels' => array(
+			'name' => 'KQ Hours',
+			'singular_name' => 'KQ Time'),
+		'public' => true,
+		'hierarchical' => false,
+		'supports' => array('title', 'editor'),
+		'taxonomies' => array(),
+		'has_archive' => false
+		));
 }
 add_action('init', 'custom_post_types');
 
