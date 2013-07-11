@@ -14,16 +14,16 @@ get_header(); ?>
 				<section class="photos">
 						<h2>Photo Albums</h2>
 <?php
-						$albumloop = new WP_QUERY(array('post_type' => 'fb-albums', 'posts_per_page' => -1, 'orderby' =>'meta_value', 'order' => 'date'));
+						$albumloop = new WP_QUERY(array('post_type' => 'fb-albums', 'posts_per_page' => -1, 'orderby' =>'date', 'order' => 'DESC'));
 						while ($albumloop->have_posts()) {
 							$albumloop->the_post();
 							$title = get_the_title();
-							$albumid = get_post_meta($post->ID 'album-form-id', true);
-							$albumlink = get_post_meta($post->ID 'album-form-link', true);
+							$albumid = get_post_meta($post->ID, 'album-form-id', true);
+							$albumlink = get_post_meta($post->ID, 'album-form-link', true);
 ?>	
 						<article class="album">
 							<h3><?php echo $title; ?></h3>
-							<?php echo do_shortcode('fb id=' . $albumid . ' limit=6 rand=1'); ?>
+							<?php echo do_shortcode('[fbphotos id=' . $albumid . ' limit=4 rand=1]'); ?>
 							<a href="<?php echo $albumlink; ?>">See More on Facebook</a>
 						</article>
 <?php 				}
