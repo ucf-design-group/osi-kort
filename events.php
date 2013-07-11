@@ -12,7 +12,6 @@ get_header(); ?>
 				</div>
 
 				<section class="events">
-					<h2>Upcoming Events</h2>
 
 <?php
 					$eventLoop = new WP_QUERY(array('post_type' => 'osi-events', 'posts_per_page' => -1, 'orderby' =>'meta_value', 'order' => 'ASC', 'meta_key' => 'oe-form-start', 'meta_value' => time(), 'meta_compare' => '>='));

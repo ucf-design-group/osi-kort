@@ -14,7 +14,6 @@ get_header(); ?>
 
 				<section class="contact">
 					<article class="address">
-						<h2>Contact Us</h2>
 						<h3>Mailing Address:</h3>
 						<p>Knights of the RoundTable
 							University of Central Florida

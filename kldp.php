@@ -12,7 +12,7 @@ get_header(); ?>
 				</div>
 
 				<section class="kdlp-board">
-					<h2>KLDP Board of Directors</h2>
+					<h2>Board of Directors</h2>
 
 <?php
 					$leaderLoop = new WP_QUERY(array('post_type' => 'kldp-board', 'posts_per_page' => -1, 'orderby' =>'meta_value', 'order' => 'ASC', 'meta_key' => 'kldp-form-order'));
@@ -26,9 +26,9 @@ get_header(); ?>
 						<?php echo $image; ?>
 						<h3><?php echo $title; ?></h3>
 					</article>
-?>
+<?php
 				}
-
+?>
 				</section> 
 
 			</div>
