@@ -11,7 +11,7 @@ get_header(); ?>
 					} ?>
 				</div>
 
-				<section class="kdlp-board">
+				<section class="kldp-board">
 					<h2>Board of Directors</h2>
 
 <?php
@@ -22,7 +22,7 @@ get_header(); ?>
 						$content = get_the_content();
 						$image = get_the_post_thumbnail($post->ID, 'small');
 ?>	
-					<article class="kldp-board">
+					<article class="kldp-leader">
 						<?php echo $image; ?>
 						<h3><?php echo $title; ?></h3>
 					</article>
