@@ -1,41 +1,38 @@
 .page-home
 
 	.main article
-
-		border: 5px outset #CBA55E
 		background-color: black
+		border: 5px outset #CBA55E
+		border-radius: 30px
 		color: white
-		max-width: 1000px
 		line-height: 2
 		margin: 4em auto
+		max-width: 1000px
 		padding: 3em 5em
-		border-radius: 30px
-		// border-bottom-right-radius: 125px
-		// border-top-left-radius: 125px
-		// text-align: center
+		
 		
 	section.mini-nav
-		width: 100%
 		margin: auto
-
+		width: 100%
+		
 		article
-			color: #eeeeee
 			float: left
-			width: 25%
-			min-width: 235px
+			margin-bottom: 2em
+			min-width: 235px 
 			padding: 1em
 			text-align: center
-			margin-bottom: 2em
+			width: 25%
 
 			a.icon
 				background-image: url('resources/homepage_sprite.png')
-				display: inline-block
-				text-indent: -10000px
-				height: 80px
-				width: 215px
 				border: 1px solid #CBA55E
+				display: inline-block
+				height: 80px
 				text-align: center
-
+				text-indent: -10000px
+				width: 215px
+				
+				
 		@for $i from 0 through 3
 			article:nth-child(#{$i + 1})
 				a.icon
@@ -55,7 +52,7 @@
 				width: 50%
 				&:nth-child(3)
 					clear: left
-					
+
 	@media screen and (max-width: 470px)
 
 		section.mini-nav
